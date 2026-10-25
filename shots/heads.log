@@ -1,0 +1,54 @@
+﻿kit.md:1: # Kit API
+kit.md:5: ## Contents
+kit.md:22: ## 1. Types
+kit.md:34: ## 2. Camera
+kit.md:44: ## 3. Solids
+kit.md:70: ## 4. Lines on faces
+kit.md:84: ## 5. Parts library
+kit.md:97: ## 6. Moving things
+kit.md:106: ## 7. SVG strings (framework-free)
+kit.md:119: ## 8. Card and page
+kit.md:129: ## 9. React components
+kit.md:150: ## 10. Round parts on any axis (`kit/lathe.mjs`)
+kit.md:234: ## 11. Pipes, tubes and cables (`kit/tube.mjs`)
+kit.md:260: ## 12. The audit (`kit/audit.mjs`)
+kit.md:348: ## 13. The WebGL layer (`kit/gl.mjs`)
+kit.md:370: ## 14. Tools
+kit.md:382: ## 15. Turning groups (`kit/turn.mjs`, `turn-build.mjs`, `turn-audit.mjs`)
+kit.md:390: ### `turning(P, { recorder, scale = 1 })` → `T`
+kit.md:403: ### `TURN` (runtime)
+kit.md:414: ### Orbit audit (`kit/turn-audit.mjs`)
+craft.md:1: # Craft
+craft.md:5: ## Contents
+craft.md:18: ## 1. What "crafted" means
+craft.md:28: ## 2. Anti-patterns
+craft.md:49: ## 3. Parts vocabulary, with recipes
+craft.md:53: ### Base plate on feet
+craft.md:67: ### Ruler strip and label plate
+craft.md:78: ### Seams, welds and trim lines on a box
+craft.md:85: ### Rod out of a gland
+craft.md:95: ### Rails, end stops and a carriage
+craft.md:106: ### Post, collar, clamp and thumb screw
+craft.md:115: ### Knurled knob with a pointer
+craft.md:122: ### Coil spring around a rod (split for painter's order)
+craft.md:131: ### Dial gauge (face up)
+craft.md:143: ### Drawer with a pull and label holder
+craft.md:152: ### Turntable with degree ticks
+craft.md:159: ### Perforations, vents and a pulsing dot grid
+craft.md:165: ### Lamp, probe and finger
+craft.md:168: ## 4. Tones
+craft.md:185: ## 5. Painter's order
+craft.md:197: ## 6. Camera and composition
+craft.md:204: ## 7. Themes
+craft.md:219: ## 8. Round parts and pipes
+craft.md:223: ### Turned parts: think in meridians
+craft.md:233: ### Parts on a round body
+craft.md:243: ### Pipes
+craft.md:249: ### Choosing waypoints
+craft.md:260: ### Contacts and junctions
+craft.md:273: ### Clearance and crossings
+craft.md:284: ### Shading and textures on curved surfaces
+craft.md:295: ### Harness routing
+craft.md:306: ## 9. Exploded views
+craft.md:316: ## 10. Screens and things on faces
+craft.md:324: ## 11. Shaders

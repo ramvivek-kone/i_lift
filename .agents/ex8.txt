@@ -1,0 +1,31 @@
+﻿export function slenderOf(solids, { ratio = 4, least = 0.3 } = {}) {
+  const out = [];
+  const axisLine = (centre, axis, half, r, shape) => {
+    out.push({ name: shape.owner ?? shape.name, solid: shape.name, owners: new Set([shape.name, shape.owner].filter(Boolean)), points: [add3(centre, mul3(axis, -half)), add3(centre, mul3(axis, half))], r, move: shape.move, ride: shape.ride, piece: shape.piece, rod: true });
+  };
+  for (const shape of solids) {
+    if (!shape || shape.kind === "tube" || shape.kind === "ball" || shape.fitting) continue;
+    if (shape.kind === "body") {
+      const s = shape.poly.map(([value]) => value);
+      const s0 = Math.min(...s);
+      const s1 = Math.max(...s);
+      const r = Math.max(...shape.poly.map(([, value]) => value));
+      if (r >= least && s1 - s0 >= ratio * r) axisLine(add3(shape.F.o, mul3(shape.F.a, (s0 + s1) / 2)), shape.F.a, (s1 - s0) / 2, r, shape);
+      continue;
+    }
+    let axes;
+    let half;
+    let centre;
+    if (shape.kind === "prism") {
+      const xs = shape.poly.map(([x]) => x);
+      const ys = shape.poly.map(([, y]) => y);
+      const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+      axes = [shape.F.u, shape.F.v, shape.F.a];
+      half = [(x1 - x0) / 2, (y1 - y0) / 2, (shape.s1 - shape.s0) / 2];
+      centre = add3(shape.F.o, add3(add3(mul3(shape.F.u, (x0 + x1) / 2), mul3(shape.F.v, (y0 + y1) / 2)), mul3(shape.F.a, (shape.s0 + shape.s1) / 2)));
+    } else if (shape.kind === "box") {
+      axes = shape.axes;
+      half = shape.half;
+      centre = shape.o;
+    } else continue;
+    const order = [0, 1, 2].sort((a, b) => half[b] - half[a]);

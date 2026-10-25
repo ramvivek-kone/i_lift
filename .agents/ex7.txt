@@ -1,0 +1,29 @@
+﻿96: if (shape.kind === "tube") return { ...shape, cut, points: shape.points.map((p) => add3(p, offset)), tips: shape.tips && shape.tips.map((tip) => tip && add3(tip, offset)), _b: undefined };
+826: const tip = tube.tips[index];
+840: (tube.tips ?? []).forEach((tip, index) => {
+890: const tipsOf = (owner) => (runsBy.get(owner) ?? []).flatMap((run) => (mounts.get(run) ?? []).filter(Boolean).map((mount) => ({ run, mount })));
+896: const tips = tipsOf(tube.owner);
+898: for (const entry of tips) {
+902: if (tipsOf(ownerOf(other)).some((theirs) => theirs.mount.shape === mount)) return true;
+904: for (const entry of tipsOf(ownerOf(other))) {
+915: const tips = mounts.get(tube) ?? [null, null];
+916: return (tips[0] && at <= zone(sample.r)) || (tips[1] && total - at <= zone(sample.r));
+984: if (!tube.tips || !tube.tips[index] || (mount && mount.landed)) return;
+985: out.push({ tube: tube.name, end: index ? "end" : "start", at: tube.tips[index], d: mount ? mount.d : Infinity, high: mount ? mount.high : Infinity, low: mount ? mount.low : -Infinity, nearest: mount ? mount.shape.name : "nothing" });
+991: export function looseEnds(tubes, solids, { state = 1, tolerance = 0.15 } = {}) {
+995: (tube.tips ?? []).forEach((tip, index) => {
+1739: export function report({ clearance = [], depth = { problems: [], missing: [] }, terminals: ends, folds: bends, supports: held, loose, apart, flight, crowding: crowded, self, wobble: wobbly, seats: seated, cover: covered } = {}, { limit = 4000 } = {}) {
+1750: if (ends) {
+1751: lines.push(`terminals: ${ends.length} end${ends.length === 1 ? "" : "s"} not on a mount`);
+1752: for (const e of ends.slice(0, limit)) lines.push(`  ${e.tube} ${e.end}  ${Number.isFinite(e.d) ? f(e.d) : "∞"} from ${e.nearest} (rim ${Number.isFinite(e.high) ? `${f(e.low)}…${f(e.high)}` : "-"})   at ${p3(e.at)}`);
+1756: lines.push(`loose ends: ${hanging.length}`);
+1759: if (bends) {
+1760: lines.push(`screen folds: ${bends.length}`);
+1761: for (const b of bends.slice(0, limit))
+1783: lines.push(`wobble: ${wobbly.length} smoothed profile${wobbly.length === 1 ? "" : "s"} whose slope turns between its ends`);
+1806: lines.push(`free ends apart (marked free, not failing): ${free.length}`);
+1812: export const failures = ({ clearance = [], depth = { problems: [], missing: [] }, terminals: ends = [], folds: bends = [], supports: held = { loose: [], sunk: [] }, loose = [], apart = [], flight = [], crowding: crowded = [], self = [], wobble: wobbly = [], seats: seated = [], cover: covered = [] }) =>
+1813: covered.length + clearance.length + apart.length + flight.length + crowded.length + ends.length + loose.filter((e) => !e.free).length + bends.length + held.loose.length + (held.hanging ?? []).length + held.sunk.length + depth.problems.length + depth.missing.length + self.length + wobbly.length + seated.length;
+1836: R.route = (name, points, radius, { owner = name, touch, bundle, limp = false, gaps = [], closed = false, ends = [true, true], rims, free = [false, false], piece = "", move = [0, 0, 0], ride = piece } = {}) => {
+1842: tips: closed ? [null, null] : [index === 0 && ends[0] ? points[0] : null, index === runs.length - 1 && ends[1] ? points[points.length - 1] : null],
+1892: loose: looseEnds(R.tubes, R.solids, { state: 1 }),

@@ -1,0 +1,46 @@
+﻿export function looseEnds(tubes, solids, { state = 1, tolerance = 0.15 } = {}) {
+  const out = [];
+  for (const tube of tubes) {
+    const offset = offsetAt(tube, state);
+    (tube.tips ?? []).forEach((tip, index) => {
+      if (!tip) return;
+      const hit = solids.some((shape) => {
+        if ((shape.owner && shape.owner === tube.owner) || shape.name === tube.owner) return false;
+        if (!sameOffset(offsetAt(shape, state), offset)) return false;
+        const { min, max } = boundsOf(shape);
+        return overlaps({ min: tip, max: tip }, { min, max }, 1) && sdf(shape, tip) <= tolerance;
+      });
+      if (!hit) out.push({ tube: tube.name, end: index ? "end" : "start", at: add3(tip, offset), state: labelOf(state), free: Boolean(tube.free && tube.free[index]) });
+    });
+  }
+  return out;
+}
+
+function surfaceOf(shape, spacing = 0.6) {
+  const points = [];
+  if (shape.kind === "body") {
+    const { F, poly } = shape;
+    const u = F.u ?? unit3(Math.abs(F.a[2]) > 0.9 ? [1, 0, 0] : [-F.a[1], F.a[0], 0]);
+    const v = F.v ?? [F.a[1] * u[2] - F.a[2] * u[1], F.a[2] * u[0] - F.a[0] * u[2], F.a[0] * u[1] - F.a[1] * u[0]];
+    for (let i = 0; i < poly.length - 1; i++) {
+      const [s0, r0] = poly[i];
+      const [s1, r1] = poly[i + 1];
+      const steps = Math.max(1, Math.ceil(Math.hypot(s1 - s0, r1 - r0) / spacing));
+      for (let j = 0; j <= steps; j++) {
+        const s = s0 + ((s1 - s0) * j) / steps;
+        const r = r0 + ((r1 - r0) * j) / steps;
+        const around = Math.max(1, Math.min(160, Math.ceil((2 * Math.PI * r) / spacing)));
+        for (let k = 0; k < around; k++) {
+          const t = (k / around) * 2 * Math.PI;
+          points.push(add3(add3(F.o, mul3(F.a, s)), add3(mul3(u, r * Math.cos(t)), mul3(v, r * Math.sin(t)))));
+        }
+      }
+    }
+  } else if (shape.kind === "box") {
+    for (let axis = 0; axis < 3; axis++)
+      for (const sign of [-1, 1]) {
+        const o1 = (axis + 1) % 3;
+        const o2 = (axis + 2) % 3;
+        const n1 = Math.max(1, Math.ceil((2 * shape.half[o1]) / spacing));
+        const n2 = Math.max(1, Math.ceil((2 * shape.half[o2]) / spacing));
+        for (let i = 0; i <= n1; i++)

@@ -1,0 +1,8 @@
+﻿const owner = "pit.cable";
+pit.box("pit.cable.bracket", [0, C.fixedY - 3, C.clampZ + 4], [C.x - 1.5, C.fixedY + 3, C.clampZ + 8], { tone: "mid" }, { r: 0.2, group: "cable", extra: bolt([0, C.fixedY - 2, C.clampZ + 6]) });
+pit.box("pit.cable.clamp", [C.x - 1.5, C.fixedY - 2.5, C.clampZ], [C.x + 1.5, C.fixedY + 2.5, C.clampZ + 8], { tone: "mid" }, { r: 0.3, group: "cable", extra: bolt([C.x + 1.5, C.fixedY, C.clampZ + 4]) });
+H.ropeSlide("pit.cable.fixed", [C.x, C.fixedY, C.clampZ], [C.x, C.fixedY, zc], r, { ...half, stroke: L.TRAVEL_CM / 2, piece: "pit", group: "cable", tone: "mid", owner });
+H.route("pit.cable", loop, r, { piece: "pit", group: "cable", ...half, owner, ends: [false, false], touch: ["pit.cable.fixed", "pit.cable.car"] });
+H.put(`pit.cable:${index}`, piece.mid, tubeSvg(piece, { tone: "mid" }), [A.tube(piece.points, piece.radii, { owner })], { piece: "pit", group: "cable", ...half, route: "pit.cable", chunk: index, bias: 0.05 }),
+const svg = `<clipPath id="clip-pit-cable-car"><path data-half d="${clip}"/></clipPath><g clip-path="url(#clip-pit-cable-car)">${tubeSvg(piece, { tone: "mid" })}</g>`;
+H.put("pit.cable.car", G.add3(tangent, [0, 0, rest / 2]), svg, [H.record(A.slide(up, 0, rest, r, { name: "pit.cable.car", owner }))], { piece: "pit", group: "cable", ride: "travel", move: [0, 0, L.TRAVEL_CM], bias: 0.05 });

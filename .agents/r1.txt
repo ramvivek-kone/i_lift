@@ -1,0 +1,27 @@
+== node --test model.test.mjs
+✔ 1. every plan ends exactly on its target, at rest (3.8882ms)
+✔ 2. speed, acceleration and jerk stay within limits, position and speed are continuous (122.9133ms)
+✔ 2b. short runs solve a lower peak speed and still end on target (0.3111ms)
+✔ 3. run times: one floor 5.067 s, L1 to L5 13.47 s (0.1394ms)
+✔ 4. derived numbers: equal and opposite travel, 2:1 rope speed, rated rpm and Hz (1.4268ms)
+✔ 5. controller: doors shut while moving, every call served, stops only on landings, deterministic (46.143ms)
+✔ 5b. boarding only with the doors open, clamped to 0..8; the tour boards while open (3.4149ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 298.2526
+
+[status 0]
+== node build.mjs
+wrote mrl-elevator.html 1595 KB · 868 items · 620 solids · scale 0.597
+
+[status 0]
+== node build.mjs --light
+wrote mrl-elevator-light.html 1596 KB · 868 items · 620 solids · scale 0.597
+
+[status 0]
+ALL DONE

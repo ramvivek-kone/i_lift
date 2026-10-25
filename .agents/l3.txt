@@ -1,0 +1,3 @@
+line ends: 0 of 464 ends on 250 lines float
+shot shots\lines-light.png
+console: clean

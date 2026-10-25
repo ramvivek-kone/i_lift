@@ -1,0 +1,11 @@
+[
+  ["wait", 300],
+  ["key", "3"],
+  ["until", "document.querySelector('[data-readout]').textContent.startsWith('L3') && document.querySelector('[data-info]').textContent.includes('doors open')", 120000],
+  ["lines", "shots/lines-l3-open.png"],
+  ["shot", "shots/pose-l3-open.png"],
+  ["key", "5"],
+  ["until", "document.querySelector('[data-readout]').textContent.startsWith('L5') && /doors (opening|open)/.test(document.querySelector('[data-info]').textContent)", 180000],
+  ["lines", "shots/lines-l5.png"],
+  ["shot", "shots/pose-l5.png"]
+]

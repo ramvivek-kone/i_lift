@@ -1,0 +1,4 @@
+saved c:\Users\k64163939\Develop\mrl-elevator-anatomy\shots\z-run-machine.png
+clip 395,64 650x1380 · readout "L2 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm" · scrolls sideways: no
+readout over time: +3000ms "L1 ▲ 0.82 m/s · rope 1.64 m/s · 98 rpm" · +6000ms "L2 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm"
+console: clean

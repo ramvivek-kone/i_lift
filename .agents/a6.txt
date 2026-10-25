@@ -1,0 +1,24 @@
+wrote mrl-elevator-light.html 1591 KB · 875 items · 627 solids · scale 0.597
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 8 pairs where a bend or end touches another line on screen
+  share 0  ropes.hitchA.sensor.cable end  ×  ropes.hitchA.1.end (rod)   outlines 0.19 apart px, 16.28 apart in depth   at screen 308.7,89.9
+  share 0  ropes.hitchA.sensor.cable bend  ×  rails.car-y0.blade (rod)   outlines 0.30 apart px, 13.87 apart in depth   at screen 302.6,93.7
+  share 0  ropes.hitchA.sensor.cable end  ×  ropes.hitchA.0.end (rod)   outlines 0.46 apart px, 14.83 apart in depth   at screen 308.7,89.9
+  share 0  ropes.hitchA.sensor.cable end  ×  ropes.hitchA.2.end (rod)   outlines 0.70 apart px, 17.74 apart in depth   at screen 308.7,89.9
+  share 1  ropes.hitchA.sensor.cable end  ×  ropes.hitchA.1.end (rod)   outlines 0.19 apart px, 16.28 apart in depth   at screen 308.7,89.9
+  share 1  ropes.hitchA.sensor.cable bend  ×  rails.car-y0.blade (rod)   outlines 0.30 apart px, 13.87 apart in depth   at screen 302.6,93.7
+  share 1  ropes.hitchA.sensor.cable end  ×  ropes.hitchA.0.end (rod)   outlines 0.46 apart px, 14.83 apart in depth   at screen 308.7,89.9
+  share 1  ropes.hitchA.sensor.cable end  ×  ropes.hitchA.2.end (rod)   outlines 0.70 apart px, 17.74 apart in depth   at screen 308.7,89.9
+audit · 18 tubes · 627 solids · 875 items · 57 depth states · 272860 overlaps · 14026 order rules · 84.6 s
+audit failed: 8 problems

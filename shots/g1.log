@@ -1,0 +1,5 @@
+﻿examples\turning-dial\build.mjs:196: return `<text class="iso-face-text" data-tone="lo" font-size="3.4" text-anchor="middle" transform="translate(${(Math.sin(angle) * r).toFixed(3)} ${(-Math.cos(angle) * r).toFixed(3)}) rotate(${(i * 36)
+examples\turning-dial\build.mjs:216: return `<text class="iso-face-text" data-tone="mid" font-size="4.2" text-anchor="middle" transform="translate(${(Math.sin(angle) * r).toFixed(3)} ${(-Math.cos(angle) * r).toFixed(3)}) rotate(${(i * 36
+kit\iso-kit.mjs:376: export function holdStill(element, [dx, dy]) {
+kit\iso-kit.mjs:455: export function fadedSvg(list, style = {}) {
+kit\iso-kit.mjs:525: export function faceTextSvg(transform, text, { size = 3, tone = "mid", anchor = "start" } = {}) {

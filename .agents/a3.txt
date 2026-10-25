@@ -1,0 +1,270 @@
+wrote mrl-elevator-light.html 1032 KB · 563 items · 462 solids · scale 0.597
+clearance: 8 problems
+  through ropes.wrapT.0  ×  ropes.cwt.0   clearance 0.00 < 0.28   along 66.26–66.26 of 66.26   at [77.0, 175.0, 1556.0]
+  through ropes.wrapT.1  ×  ropes.cwt.1   clearance 0.00 < 0.28   along 66.24–66.24 of 66.24   at [79.0, 175.0, 1556.0]
+  through ropes.wrapT.2  ×  ropes.cwt.2   clearance 0.00 < 0.28   along 66.24–66.24 of 66.24   at [81.0, 175.0, 1556.0]
+  through ropes.wrapT.3  ×  ropes.cwt.3   clearance 0.00 < 0.28   along 66.26–66.26 of 66.26   at [83.0, 175.0, 1556.0]
+  through ropes.wrapT.0  ×  ropes.car.0   clearance 0.00 < 0.28   along 0.00–0.00 of 66.26   at [77.1, 142.1, 1540.0]
+  through ropes.wrapT.3  ×  ropes.car.3   clearance 0.00 < 0.28   along 0.00–0.00 of 66.26   at [82.9, 143.9, 1540.0]
+  through ropes.wrapT.1  ×  ropes.car.1   clearance 0.00 < 0.28   along 0.00–0.00 of 66.24   at [79.0, 142.7, 1540.0]
+  through ropes.wrapT.2  ×  ropes.car.2   clearance 0.00 < 0.28   along 0.00–0.00 of 66.24   at [81.0, 143.3, 1540.0]
+clearance apart: 8 problems
+  through share 1  ropes.wrapT.0  ×  ropes.cwt.0   clearance 0.00 < 0.28   along 66.26–66.26 of 66.26   at [77.0, 175.0, 1556.0]
+  through share 1  ropes.wrapT.1  ×  ropes.cwt.1   clearance 0.00 < 0.28   along 66.24–66.24 of 66.24   at [79.0, 175.0, 1556.0]
+  through share 1  ropes.wrapT.2  ×  ropes.cwt.2   clearance 0.00 < 0.28   along 66.24–66.24 of 66.24   at [81.0, 175.0, 1556.0]
+  through share 1  ropes.wrapT.3  ×  ropes.cwt.3   clearance 0.00 < 0.28   along 66.26–66.26 of 66.26   at [83.0, 175.0, 1556.0]
+  through share 1  ropes.wrapT.0  ×  ropes.car.0   clearance 0.00 < 0.28   along 0.00–0.00 of 66.26   at [77.1, 142.1, 1540.0]
+  through share 1  ropes.wrapT.3  ×  ropes.car.3   clearance 0.00 < 0.28   along 0.00–0.00 of 66.26   at [82.9, 143.9, 1540.0]
+  through share 1  ropes.wrapT.1  ×  ropes.car.1   clearance 0.00 < 0.28   along 0.00–0.00 of 66.24   at [79.0, 142.7, 1540.0]
+  through share 1  ropes.wrapT.2  ×  ropes.car.2   clearance 0.00 < 0.28   along 0.00–0.00 of 66.24   at [81.0, 143.3, 1540.0]
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 1 sunk pair
+  sunk    car.safety.syncrod × car.top.post   0.83 deep
+depth order: 8 problems
+  cycle  share 0  ropes.under.0:14 (k 167.17) is in front of car.pulley.near (k 590.74) but drawn first   0.50 px² (0.44 px² the other way), up to 2.41 nearer, at 243.5,887.8
+  cycle  share 0  ropes.under.1:14 (k 168.63) is in front of car.pulley.near (k 590.74) but drawn first   0.25 px² (0.44 px² the other way), up to 5.15 nearer, at 242.3,887.0
+  cycle  share 0  ropes.under.2:14 (k 170.09) is in front of car.pulley.near (k 590.74) but drawn first   0.31 px² (0.25 px² the other way), up to 7.91 nearer, at 243.3,887.8
+  order  share 0  car.pulley.near.flange (k 590.78) is in front of ropes.car.3 (k 720.86) but drawn first   0.50 px², up to 2.30 nearer, at 242.3,882.3
+  cycle  share 1  ropes.under.0:14 (k 727.17) is in front of car.pulley.near (k 1150.74) but drawn first   0.50 px² (0.44 px² the other way), up to 2.41 nearer, at 243.5,308.3
+  cycle  share 1  ropes.under.1:14 (k 728.63) is in front of car.pulley.near (k 1150.74) but drawn first   0.25 px² (0.44 px² the other way), up to 5.15 nearer, at 242.3,307.5
+  cycle  share 1  ropes.under.2:14 (k 730.09) is in front of car.pulley.near (k 1150.74) but drawn first   0.31 px² (0.25 px² the other way), up to 7.91 nearer, at 243.3,308.3
+  order  share 1  car.pulley.near.flange (k 1150.78) is in front of ropes.car.3 (k 1280.86) but drawn first   0.63 px², up to 2.20 nearer, at 242.3,302.8
+through in mid-flight: 8 pairs
+  through share 0  ropes.wrapT.0  ×  ropes.cwt.0   clearance 0.00 < 0.28   along 66.26–66.26 of 66.26   at [77.0, 175.0, 1556.0]
+  through share 0  ropes.wrapT.1  ×  ropes.cwt.1   clearance 0.00 < 0.28   along 66.24–66.24 of 66.24   at [79.0, 175.0, 1556.0]
+  through share 0  ropes.wrapT.2  ×  ropes.cwt.2   clearance 0.00 < 0.28   along 66.24–66.24 of 66.24   at [81.0, 175.0, 1556.0]
+  through share 0  ropes.wrapT.3  ×  ropes.cwt.3   clearance 0.00 < 0.28   along 66.26–66.26 of 66.26   at [83.0, 175.0, 1556.0]
+  through share 0  ropes.wrapT.0  ×  ropes.car.0   clearance 0.00 < 0.28   along 0.00–0.00 of 66.26   at [77.1, 142.1, 1540.0]
+  through share 0  ropes.wrapT.3  ×  ropes.car.3   clearance 0.00 < 0.28   along 0.00–0.00 of 66.26   at [82.9, 143.9, 1540.0]
+  through share 0  ropes.wrapT.1  ×  ropes.car.1   clearance 0.00 < 0.28   along 0.00–0.00 of 66.24   at [79.0, 142.7, 1540.0]
+  through share 0  ropes.wrapT.2  ×  ropes.car.2   clearance 0.00 < 0.28   along 0.00–0.00 of 66.24   at [81.0, 143.3, 1540.0]
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+in passing (uniform explode states only, not failing): 3 interlocked pairs, 1 pairs no linear key can order
+  cycle  share 0.018  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.018  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.018  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.018  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.036  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.036  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.036  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.036  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.054  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.054  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.054  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.054  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.071  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.071  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.071  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.071  car.pulley.near.flange / ropes.car.3   0.63 px²
+  cycle  share 0.089  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.089  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.089  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.089  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.107  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.107  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.107  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.107  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.125  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.125  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.125  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.125  car.pulley.near.flange / ropes.car.3   0.63 px²
+  cycle  share 0.143  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.143  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.143  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.143  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.161  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.161  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.161  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.161  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.179  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.179  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.179  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.179  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.196  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.196  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.196  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.196  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.214  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.214  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.214  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.214  car.pulley.near.flange / ropes.car.3   0.63 px²
+  cycle  share 0.232  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.232  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.232  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.232  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.25  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.25  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.25  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.25  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.268  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.268  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.268  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.268  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.286  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.286  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.286  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.286  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.304  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.304  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.304  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.304  car.pulley.near.flange / ropes.car.3   0.63 px²
+  cycle  share 0.321  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.321  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.321  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.321  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.339  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.339  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.339  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.339  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.357  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.357  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.357  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.357  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.375  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.375  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.375  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.375  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.393  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.393  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.393  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.393  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.411  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.411  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.411  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.411  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.429  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.429  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.429  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.429  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.446  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.446  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.446  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.446  car.pulley.near.flange / ropes.car.3   0.63 px²
+  cycle  share 0.464  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.464  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.464  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.464  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.482  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.482  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.482  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.482  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.5  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.5  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.5  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.5  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.518  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.518  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.518  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.518  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.536  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.536  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.536  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.536  car.pulley.near.flange / ropes.car.3   0.63 px²
+  cycle  share 0.554  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.554  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.554  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.554  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.571  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.571  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.571  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.571  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.589  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.589  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.589  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.589  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.607  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.607  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.607  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.607  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.625  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.625  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.625  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.625  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.643  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.643  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.643  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.643  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.661  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.661  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.661  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.661  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.679  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.679  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.679  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.679  car.pulley.near.flange / ropes.car.3   0.63 px²
+  cycle  share 0.696  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.696  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.696  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.696  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.714  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.714  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.714  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.714  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.732  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.732  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.732  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.732  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.75  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.75  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.75  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.75  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.768  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.768  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.768  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.768  car.pulley.near.flange / ropes.car.3   0.63 px²
+  cycle  share 0.786  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.786  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.786  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.786  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.804  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.804  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.804  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.804  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.821  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.821  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.821  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.821  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.839  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.839  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.839  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.839  car.pulley.near.flange / ropes.car.3   0.56 px²
+  cycle  share 0.857  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.857  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.857  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.857  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.875  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.875  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.875  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.875  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.893  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.893  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.893  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.893  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.911  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.911  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.911  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.911  car.pulley.near.flange / ropes.car.3   0.63 px²
+  cycle  share 0.929  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.929  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.929  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.929  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.946  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.946  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.946  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.946  car.pulley.near.flange / ropes.car.3   0.38 px²
+  cycle  share 0.964  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.964  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.964  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.964  car.pulley.near.flange / ropes.car.3   0.50 px²
+  cycle  share 0.982  ropes.under.0:14 / car.pulley.near   0.50 px²
+  cycle  share 0.982  ropes.under.1:14 / car.pulley.near   0.25 px²
+  cycle  share 0.982  ropes.under.2:14 / car.pulley.near   0.31 px²
+  unorderable share 0.982  car.pulley.near.flange / ropes.car.3   0.38 px²
+audit · 13 tubes · 462 solids · 563 items · 57 depth states · 179135 overlaps · 8876 order rules · 68.6 s
+audit failed: 33 problems

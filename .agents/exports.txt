@@ -1,0 +1,115 @@
+﻿iso-kit.mjs: export const AZIMUTH 
+iso-kit.mjs: export const ELEVATION 
+iso-kit.mjs: export const SHADES 
+iso-kit.mjs: export function cameraOf({ scale, azimuth = AZIMUTH, elevation = ELEVATION })
+iso-kit.mjs: export function iso([x, y, z], projection)
+iso-kit.mjs: export function towardViewer(projection)
+iso-kit.mjs: export function depthOf([x, y, z], projection)
+iso-kit.mjs: export function pathOf(points, closed = false)
+iso-kit.mjs: export const joinPaths 
+iso-kit.mjs: export function roundedPlan({ x, y, w, d, r }, steps = 8)
+iso-kit.mjs: export function extrude(ring, z, height, projection, options = {})
+iso-kit.mjs: export const ringOf 
+iso-kit.mjs: export function slabOf(plan, z, height, projection, steps = 8, bevel = 0)
+iso-kit.mjs: export function circleRing(cx, cy, radius, steps = 40)
+iso-kit.mjs: export function cylinder(cx, cy, radius, z, height, projection, steps = 32, bevel = 0)
+iso-kit.mjs: export const insetPlan 
+iso-kit.mjs: export function onTop(points, z, projection, closed = false)
+iso-kit.mjs: export const planOutline 
+iso-kit.mjs: export const lineOnTop 
+iso-kit.mjs: export const segment 
+iso-kit.mjs: export const rise 
+iso-kit.mjs: export const ring 
+iso-kit.mjs: export const pointsAt 
+iso-kit.mjs: export function dotGrid(x, y, columns, rows, gap, z, projection)
+iso-kit.mjs: export function corners({ x, y, w, d }, inset = 0)
+iso-kit.mjs: export function boxCorners({ x, y, w, d }, z0, z1)
+iso-kit.mjs: export function knurl(cx, cy, radius, z0, z1, count, projection, inset = 0.4)
+iso-kit.mjs: export function sideArc(cx, cy, radius, z, projection, steps = 24)
+iso-kit.mjs: export function ringSeam(ring, z, projection)
+iso-kit.mjs: export const sideSeam 
+iso-kit.mjs: export function sideRing(center, radius, axis, projection, steps = 20)
+iso-kit.mjs: export function coil(from, to, center, radius, turns, axis, projection, perTurn = 16)
+iso-kit.mjs: export function topTicks(from, to, step, every, edge, z, lengths, projection, axis = "x")
+iso-kit.mjs: export function sideTicks(from, to, step, every, face, top, lengths, projection, axis = "x")
+iso-kit.mjs: export function radialTicks(cx, cy, radius, count, every, z, lengths, projection, from = 0, span = Math.PI * 2)
+iso-kit.mjs: export const haloOf 
+iso-kit.mjs: export function axisVector(projection, [dx, dy, dz])
+iso-kit.mjs: export function translateAlong(projection, by)
+iso-kit.mjs: export function holdStill(element, [dx, dy])
+iso-kit.mjs: export function topMatrix(at, z, projection, along = "x")
+iso-kit.mjs: export function sideMatrix(at, z, projection, face)
+iso-kit.mjs: export function screenRise(height, projection)
+iso-kit.mjs: export function fitProjection(points, width, height, { pad = 24, headroom = 0, azimuth = AZIMUTH, elevation = ELEVATION } = {})
+iso-kit.mjs: export function solidSvg(paths, { tone = "hi", crease = "faint", halo = false, lit = false, flat = false, className, inner = "" } = {})
+iso-kit.mjs: export function lineSvg(d, { tone = "lo", dotted = false, dashed = false, flow = false, className, free } = {})
+iso-kit.mjs: export function dotsSvg(points, { size = 0.5, tone = "mid", pulse = false } = {})
+iso-kit.mjs: export function fadedSvg(list, style = {})
+iso-kit.mjs: export function fadeLineSvg(points, { fade = [0, 0], tone = "lo", className, stops = 6 } = {})
+iso-kit.mjs: export function wireSvg(from, to, { via = [], tone = "lo", dotted = false, dashed = false, flow = false, ends = "both", size = 1.2 } = {})
+iso-kit.mjs: export function faceTextSvg(transform, text, { size = 3, tone = "mid", anchor = "start" } = {})
+iso-kit.mjs: export function groupSvg(children, extra = {})
+iso-kit.mjs: export function figureSvg({ width, height, label, body, standalone = false, className })
+iso-kit.mjs: export function plateHtml({ fig, title, hint, readout = "", keys = [], caption, body })
+iso-kit.mjs: export function pageHtml({ title, theme = "dark", body, script = "", width = 650 })
+iso-kit.mjs: export const ISO_CSS 
+lathe.mjs: export const dot3 
+lathe.mjs: export const add3 
+lathe.mjs: export const sub3 
+lathe.mjs: export const mul3 
+lathe.mjs: export const len3 
+lathe.mjs: export const unit3 
+lathe.mjs: export const cross3 
+lathe.mjs: export const lerp3 
+lathe.mjs: export function viewOf(P)
+lathe.mjs: export function lightOf(P)
+lathe.mjs: export const scaleOf 
+lathe.mjs: export function bandOf(score)
+lathe.mjs: export const toneOf 
+lathe.mjs: export function frameAlong(o, a)
+lathe.mjs: export const frameOf 
+lathe.mjs: export function pointOf(F, s, r, angle)
+lathe.mjs: export const radialOf 
+lathe.mjs: export const tangentOf 
+lathe.mjs: export const angleToward 
+lathe.mjs: export const hullOf 
+lathe.mjs: export function runsOf(flags)
+lathe.mjs: export const stepsFor 
+lathe.mjs: export function curveRuns(meridian)
+lathe.mjs: export const softOf 
+lathe.mjs: export function lathe(meridian, F, P, { steps = stepsFor(Math.max(...meridian.map(([, r])
+lathe.mjs: export function outlineOf(meridian, F, P, { steps = stepsFor(Math.max(...meridian.map(([, r])
+lathe.mjs: export const saddleStart 
+lathe.mjs: export function saddleOf(F, a, start, s1, P, { steps = stepsFor(a, 24)
+lathe.mjs: export function prismOf(F, polygon, s0, s1, P)
+lathe.mjs: export function stadium(r0, r1, offset, steps = 32)
+lathe.mjs: export function sphereOf(centre, r, P, { steps = 48 } = {})
+lathe.mjs: export const disc 
+lathe.mjs: export const ringBand 
+lathe.mjs: export function solidOf(profile, F, P, options = {})
+lathe.mjs: export function bandOfProfile(profile, F, P, options = {})
+lathe.mjs: export function silhouettePoints(profile, F, P, { samples = 72, slope: given = null, radius = null } = {})
+lathe.mjs: export const silhouetteOf 
+lathe.mjs: export function profileCurve(profile, { slope = null, radius = null } = {})
+lathe.mjs: export function bandsOf(profile, cuts, F, P, { slope = null, radius = null, steps, rows = 6, rims = "none", fill = "auto", samples = 72 } = {})
+lathe.mjs: export function arcOf(F, s, r, P, { slope = 0, steps = 0, least = 0.02, inward = false, from = 0, to = TAU, trim = 0.3 } = {})
+lathe.mjs: export function circleOf(F, s, r, P, steps = 0)
+lathe.mjs: export function spokesOf(F, s, r0, r1, count, P, { phase = 0, sweep = 0, from = 0, to = TAU } = {})
+lathe.mjs: export const fadeOf 
+lathe.mjs: export function ribsOf(F, s0, s1, r, count, P, { phase = 0, twist = 0, least = 0.12, r1 = r, fade = null, seams = false } = {})
+lathe.mjs: export function rodOut(F, from, to, r, P, { stroke = 0, ...options } = {})
+lathe.mjs: export function dotsOf(F, s, r, count, P, { phase = 0, slope = 0, least = 0.08, all = false, fade = null } = {})
+lathe.mjs: export function facingOf(F, angle, P, slope = 0)
+lathe.mjs: export function fillet(points, radius, perArc = 7, { P = null, tube = 0, margin = 1.3 } = {})
+lathe.mjs: export function resample(points, spacing)
+lathe.mjs: export function pathLength(points)
+lathe.mjs: export function cut(points, from, to)
+lathe.mjs: export const pointAlong 
+lathe.mjs: export function tangentAlong(points, at)
+lathe.mjs: export function spiral(F, s, r0, r1, a0, a1, steps = 28)
+lathe.mjs: export function arcPoints(F, s, r, a0, a1, steps = 24)
+tube.mjs: export function runsOf(total, gaps = [])
+tube.mjs: export function crossingsOf(points, centre, axis, radius)
+tube.mjs: export function tubePieces(points3, radius, P, { maxLength = 30, spacing = 2.2, closed = false, breaks = [], gaps = [], caps = true, stripes = "auto", rings = null } = {})
+tube.mjs: export function ringsSvg(rings, tone = "lo")
+tube.mjs: export function tubeSvg(piece, { tone = "hi" } = {})

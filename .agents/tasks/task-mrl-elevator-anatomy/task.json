@@ -1,0 +1,7 @@
+{
+  "task_id": "task-mrl-elevator-anatomy",
+  "task_description": "Build a Hero-size, highly detailed, interactive isometric SVG anatomy figure of a modern complete MRL (machine-room-less) 2:1 traction elevator with the installed anatomy skill: a framework-free Node build.mjs in c:\\Users\\k64163939\\Develop\\mrl-elevator-anatomy that writes standalone dark and light (primary) HTML pages, driven by one pure model (S-curve car travel, opposite counterweight, ropes at 2x car speed), passing the skill's audit and line-end checks, with keyboard/pointer interaction, part explanations, reduced motion and an idle tour. The full design is in .agents\\tasks\\plan.md.",
+  "status": "pending",
+  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003", "FEAT-004"],
+  "blocked_reason": null
+}

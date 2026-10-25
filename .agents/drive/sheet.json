@@ -1,0 +1,8 @@
+[
+  ["wait", 300],
+  ["key", "Escape"],
+  ["key", "2"],
+  ["slow", 0.25],
+  ["sheet", "shots/sheet.png", 150, 16],
+  ["slow", 1]
+]

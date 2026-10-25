@@ -1,0 +1,58 @@
+wrote mrl-elevator-light.html 1592 KB · 875 items · 627 solids · scale 0.597
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 2 problems
+  order  share 0  car.pulley.near.flange (k 590.82) is in front of ropes.car.3 (k 720.88) but drawn first   0.25 px², up to 2.85 nearer, at 242.3,883.0
+  order  share 1  car.pulley.near.flange (k 1150.82) is in front of ropes.car.3 (k 1280.88) but drawn first   0.25 px², up to 2.75 nearer, at 242.3,303.5
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 3 pairs where a bend or end touches another line on screen
+  share 0  pit.cable.loop end  ×  pit.cable.car (rod)   outlines overlap 0.21 px, 1.18 apart in depth   at screen 227.3,862.9
+  share 0  lcp.cable.encoder start  ×  lcp.back (rod)   outlines overlap 9.98 px, 20.25 apart in depth   at screen 281.8,204.6
+  share 1  lcp.cable.encoder start  ×  lcp.back (rod)   outlines overlap 9.98 px, 20.25 apart in depth   at screen 281.8,204.6
+in passing (uniform explode states only, not failing): 0 interlocked pairs, 1 pairs no linear key can order
+  unorderable share 0.036  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.054  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.071  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.089  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.125  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.143  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.179  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.214  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.232  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.268  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.286  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.304  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.321  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.357  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.375  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.411  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.446  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.464  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.5  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.518  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.536  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.554  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.589  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.607  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.643  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.679  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.696  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.732  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.768  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.786  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.821  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.839  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.875  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.911  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.929  car.pulley.near.flange / ropes.car.3   0.25 px²
+  unorderable share 0.964  car.pulley.near.flange / ropes.car.3   0.25 px²
+audit · 18 tubes · 627 solids · 875 items · 57 depth states · 282105 overlaps · 14229 order rules · 67.0 s
+audit failed: 5 problems

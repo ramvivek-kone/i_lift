@@ -1,0 +1,285 @@
+wrote mrl-elevator-light.html 1009 KB · 547 items · 450 solids · scale 0.597
+clearance: 0 problems
+clearance apart: 1 problem
+  solid   share 1  ropes.car.3  ×  car.pulley.near   sunk 0.65 deep   at [83.0, 142.7, 1198.0]
+terminals: 0 ends not on a mount
+loose ends: 8
+  share 1  ropes.wrapT.0 start touches nothing that moves with it   at [77.0, 143.0, 1556.0]
+  share 1  ropes.wrapT.0 end touches nothing that moves with it   at [77.0, 175.0, 1556.0]
+  share 1  ropes.wrapT.1 start touches nothing that moves with it   at [79.0, 143.0, 1556.0]
+  share 1  ropes.wrapT.1 end touches nothing that moves with it   at [79.0, 175.0, 1556.0]
+  share 1  ropes.wrapT.2 start touches nothing that moves with it   at [81.0, 143.0, 1556.0]
+  share 1  ropes.wrapT.2 end touches nothing that moves with it   at [81.0, 175.0, 1556.0]
+  share 1  ropes.wrapT.3 start touches nothing that moves with it   at [83.0, 143.0, 1556.0]
+  share 1  ropes.wrapT.3 end touches nothing that moves with it   at [83.0, 175.0, 1556.0]
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 9 problems
+  cycle  share 0  ropes.wrapT.0:1 (k 1651.10) is in front of machine.sheave (k 1651.12) but drawn first   0.25 px² (0.38 px² the other way), up to 3.69 nearer, at 237.3,112.5
+  cycle  share 0  ropes.under.0:14 (k 167.17) is in front of car.pulley.near (k 590.74) but drawn first   0.31 px² (0.69 px² the other way), up to 2.40 nearer, at 241.5,886.3
+  cycle  share 0  ropes.wrapC.2:4 (k 2121.16) is in front of cwt.pulley (k 2211.16) but drawn first   0.38 px² (0.31 px² the other way), up to 10.87 nearer, at 218.8,166.8
+  order  share 0  car.safety.pullrod (k 720.68) is in front of car.crosshead (k 720.92) but drawn first   0.56 px², up to 3.21 nearer, at 301.8,717.8
+  cycle  share 1  ropes.wrapT.0:1 (k 1651.10) is in front of machine.sheave (k 1651.12) but drawn first   0.25 px² (0.38 px² the other way), up to 3.69 nearer, at 237.3,112.5
+  cycle  share 1  ropes.under.0:14 (k 727.17) is in front of car.pulley.near (k 1150.74) but drawn first   0.31 px² (0.69 px² the other way), up to 2.40 nearer, at 241.5,306.8
+  cycle  share 1  ropes.wrapC.2:4 (k 1561.16) is in front of cwt.pulley (k 1651.16) but drawn first   0.38 px² (0.31 px² the other way), up to 10.87 nearer, at 218.8,746.3
+  cycle  share 1  car.pulley.near (k 1150.74) is in front of ropes.car.3 (k 1280.90) but drawn first   0.88 px² (3.31 px² the other way), up to 2.60 nearer, at 242.0,304.0
+  order  share 1  car.safety.pullrod (k 1280.68) is in front of car.crosshead (k 1280.92) but drawn first   0.56 px², up to 3.21 nearer, at 301.8,138.3
+through in mid-flight: 1 pair
+  solid   share 1  ropes.car.3  ×  car.pulley.near   sunk 0.65 deep   at [83.0, 142.7, 1198.0]
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 19 pairs where a bend or end touches another line on screen
+  share 0  ropes.wrapC.0 end  ×  ropes.B.1 (rod)   outlines 0.24 apart px, 1.56 apart in depth   at screen 215.0,161.6
+  share 0  ropes.wrapC.1 end  ×  ropes.B.2 (rod)   outlines 0.24 apart px, 1.56 apart in depth   at screen 215.9,162.0
+  share 0  ropes.wrapC.2 end  ×  ropes.B.3 (rod)   outlines 0.24 apart px, 1.56 apart in depth   at screen 216.9,162.4
+  share 0  ropes.wrapC.3 end  ×  ropes.B.2 (rod)   outlines 0.48 apart px, 0.82 apart in depth   at screen 217.8,162.7
+  share 0  ropes.wrapC.2 end  ×  ropes.B.1 (rod)   outlines 0.48 apart px, 0.82 apart in depth   at screen 216.8,162.3
+  share 0  ropes.wrapC.1 end  ×  ropes.B.0 (rod)   outlines 0.48 apart px, 0.82 apart in depth   at screen 215.9,161.9
+  share 0  ropes.wrapC.2 end  ×  stand.wall.x0 (rod)   outlines overlap 70.75 px, 151.08 apart in depth   at screen 216.9,162.5
+  share 0  ropes.wrapC.1 end  ×  stand.wall.x0 (rod)   outlines overlap 71.59 px, 149.96 apart in depth   at screen 215.9,162.2
+  share 0  ropes.wrapC.0 end  ×  stand.wall.x0 (rod)   outlines overlap 72.35 px, 148.85 apart in depth   at screen 215.0,161.8
+  share 1  ropes.wrapC.0 end  ×  ropes.B.1 (rod)   outlines 0.24 apart px, 1.56 apart in depth   at screen 215.0,741.0
+  share 1  ropes.wrapC.1 end  ×  ropes.B.2 (rod)   outlines 0.24 apart px, 1.56 apart in depth   at screen 215.9,741.4
+  share 1  ropes.wrapC.2 end  ×  ropes.B.3 (rod)   outlines 0.24 apart px, 1.56 apart in depth   at screen 216.9,741.8
+  share 1  ropes.wrapC.1 end  ×  ropes.B.0 (rod)   outlines 0.48 apart px, 0.82 apart in depth   at screen 215.9,741.3
+  share 1  ropes.wrapC.3 end  ×  ropes.B.2 (rod)   outlines 0.48 apart px, 0.82 apart in depth   at screen 217.8,742.0
+  share 1  ropes.wrapC.2 end  ×  ropes.B.1 (rod)   outlines 0.48 apart px, 0.82 apart in depth   at screen 216.8,741.7
+  share 1  ropes.wrapC.3 end  ×  stand.wall.x0 (rod)   outlines overlap 63.04 px, 144.69 apart in depth   at screen 217.8,742.3
+  share 1  ropes.wrapC.2 end  ×  stand.wall.x0 (rod)   outlines overlap 63.68 px, 143.58 apart in depth   at screen 216.9,741.9
+  share 1  ropes.wrapC.1 end  ×  stand.wall.x0 (rod)   outlines overlap 64.27 px, 142.46 apart in depth   at screen 215.9,741.6
+  share 1  ropes.wrapC.0 end  ×  stand.wall.x0 (rod)   outlines overlap 64.81 px, 141.35 apart in depth   at screen 215.0,741.2
+in passing (uniform explode states only, not failing): 4 interlocked pairs, 1 pairs no linear key can order
+  cycle  share 0.018  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.018  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.018  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.018  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.036  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.036  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.036  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.036  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.054  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.054  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.054  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.054  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.071  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.071  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.071  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.071  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.089  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.089  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.089  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.089  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.107  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.107  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.107  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.107  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.125  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.125  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.125  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.125  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.143  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.143  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.143  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.143  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.161  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.161  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.161  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.161  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.179  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.179  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.179  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.179  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.196  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.196  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.196  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.196  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.214  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.214  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.214  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.214  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.232  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.232  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.232  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.232  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.25  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.25  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.25  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.25  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.268  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.268  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.268  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.268  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.286  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.286  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.286  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.286  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.304  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.304  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.304  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.304  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.321  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.321  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.321  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.321  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.339  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.339  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.339  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.339  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.357  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.357  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.357  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.357  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.375  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.375  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.375  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.375  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.393  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.393  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.393  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.393  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.411  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.411  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.411  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.411  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.429  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.429  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.429  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.429  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.446  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.446  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.446  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.446  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.464  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.464  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.464  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.464  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.482  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.482  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.482  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.482  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.5  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.5  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.5  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.5  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.518  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.518  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.518  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.518  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.536  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.536  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.536  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.536  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.554  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.554  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.554  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.554  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.571  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.571  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.571  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.571  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.589  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.589  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.589  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.589  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.607  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.607  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.607  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.607  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.625  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.625  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.625  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.625  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.643  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.643  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.643  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.643  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.661  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.661  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.661  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.661  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.679  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.679  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.679  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.679  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.696  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.696  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.696  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.696  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.714  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.714  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.714  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.714  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.732  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.732  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.732  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.732  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.75  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.75  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.75  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.75  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.768  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.768  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.768  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.768  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.786  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.786  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.786  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.786  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.804  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.804  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.804  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  unorderable share 0.804  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.821  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.821  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.821  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.821  car.pulley.near / ropes.car.3   0.50 px²
+  unorderable share 0.821  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.839  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.839  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.839  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.839  car.pulley.near / ropes.car.3   0.44 px²
+  unorderable share 0.839  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.857  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.857  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.857  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.857  car.pulley.near / ropes.car.3   0.38 px²
+  unorderable share 0.857  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.875  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.875  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.875  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.875  car.pulley.near / ropes.car.3   0.50 px²
+  unorderable share 0.875  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.893  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.893  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.893  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.893  car.pulley.near / ropes.car.3   0.44 px²
+  unorderable share 0.893  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.911  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.911  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.911  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.911  car.pulley.near / ropes.car.3   0.50 px²
+  unorderable share 0.911  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.929  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.929  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.929  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.929  car.pulley.near / ropes.car.3   0.44 px²
+  unorderable share 0.929  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.946  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.946  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.946  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.946  car.pulley.near / ropes.car.3   0.38 px²
+  unorderable share 0.946  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.964  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.964  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.964  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.964  car.pulley.near / ropes.car.3   0.88 px²
+  unorderable share 0.964  car.safety.pullrod / car.crosshead   0.56 px²
+  cycle  share 0.982  ropes.wrapT.0:1 / machine.sheave   0.25 px²
+  cycle  share 0.982  ropes.under.0:14 / car.pulley.near   0.31 px²
+  cycle  share 0.982  ropes.wrapC.2:4 / cwt.pulley   0.38 px²
+  cycle  share 0.982  car.pulley.near / ropes.car.3   0.75 px²
+  unorderable share 0.982  car.safety.pullrod / car.crosshead   0.56 px²
+audit · 13 tubes · 450 solids · 547 items · 57 depth states · 162235 overlaps · 7683 order rules · 65.9 s
+audit failed: 38 problems

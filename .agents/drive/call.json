@@ -1,0 +1,14 @@
+[
+  ["wait", 300],
+  ["eval", "(() => { const b = document.querySelector('[data-call=\"1\"][data-dir=\"up\"]'); return b ? 'hall L1 up button present' : 'missing'; })()"],
+  ["click", "[data-call=\"4\"][data-dir=\"up\"]"],
+  ["wait", 200],
+  ["eval", "'hall L4 up lit: ' + document.querySelector('[data-call=\"4\"][data-dir=\"up\"]').hasAttribute('data-lit') + ' | ' + document.querySelector('[data-readout]').textContent"],
+  ["wait", 4000],
+  ["eval", "document.querySelector('[data-readout]').textContent + ' | ' + document.querySelector('[data-info]').textContent"],
+  ["shot", "shots/call-l4-running.png"],
+  ["move", ".mrl-part", 0.5, 0.5],
+  ["wait", 300],
+  ["eval", "document.querySelector('[data-info]').textContent + ' | on: ' + document.querySelectorAll('.it[data-on]').length"],
+  ["shot", "shots/hover-machine.png"]
+]

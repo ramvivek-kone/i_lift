@@ -1,0 +1,16 @@
+wrote mrl-elevator-light.html 1581 KB · 868 items · 620 solids · scale 0.597
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 18 tubes · 620 solids · 868 items · 1 depth states · 4585 overlaps · 4585 order rules · 53.6 s
+audit passed

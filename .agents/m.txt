@@ -1,0 +1,28 @@
+﻿11:   door: { clear: 0.80, open: 2.0, dwell: 3.0, close: 2.5 },
+107: export function derived(state, spec = SPEC) {
+123:     inverterHz: ((spec.poles / 2) * sheaveRpm) / 60,
+124:     sheaveAngle: (spec.roping * carPos) / (spec.sheaveD / 2),
+125:     carPulleyAngle: carPos / (spec.carPulleyD / 2),
+126:     cwtPulleyAngle: carPos / (spec.cwtPulleyD / 2),
+127:     govAngle: carPos / (spec.govD / 2),
+128:     govRpm: (speed / (Math.PI * spec.govD)) * 60,
+135:     door: state.door ?? 0,
+136:     doorState: state.doorState ?? "closed",
+138:     loopPos: carPos / 2,
+148:   return `Car ${d.carPos.toFixed(2)} m above L1 · counterweight ${d.cwtPos.toFixed(2)} m · load ${Math.round(d.loadPct * 100)} % (${d.loadKg} kg) · doors ${d.doorState} · governor ${Math.round(d.govRpm)} rpm (trips at ${d.govTripSpeed.toFixed(2)} m/s)`;
+158:     doorState: "closed", doorT: 0, door: 0, persons: 0,
+168:   if (s.doorState === "open") s.doorT = 0;
+169:   else if (s.doorState === "closing") {
+179:     s.doorState = "opening";
+181:   } else if (s.doorState === "closed") {
+182:     s.doorState = "opening";
+201:   if (state.doorState !== "open") return state;
+250:   s.doorState = "opening";
+277:   if (s.doorState === "opening") {
+281:       s.doorState = "open";
+287:   if (s.doorState === "open") {
+294:       s.doorState = "closing";
+299:   if (s.doorState === "closing") {
+303:       s.doorState = "closed";
+314:     s.doorState = "opening";
+325:       s.doorState = "opening";

@@ -1,0 +1,93 @@
+== node build.mjs --light --audit
+wrote mrl-elevator-light.html 1596 KB · 868 items · 620 solids · scale 0.597
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 18 tubes · 620 solids · 868 items · 57 depth states · 265131 overlaps · 13865 order rules · 89.3 s
+audit passed
+
+[status 0]
+== node build.mjs --light --audit --open
+wrote mrl-elevator-light.html 1595 KB · 868 items · 620 solids · scale 0.597
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 18 tubes · 620 solids · 868 items · 1 depth states · 4585 overlaps · 4585 order rules · 55.9 s
+audit passed
+
+[status 0]
+== node build.mjs --light
+wrote mrl-elevator-light.html 1596 KB · 868 items · 620 solids · scale 0.597
+
+[status 0]
+== node C:/Users/k64163939/.kiro/skills/anatomy/scripts/lines.mjs mrl-elevator-light.html --out shots/lines-light.png
+line ends: 0 of 464 ends on 250 lines float
+shot shots/lines-light.png
+console: clean
+
+[status 0]
+== node C:/Users/k64163939/.kiro/skills/anatomy/scripts/lines.mjs mrl-elevator.html --out shots/lines-dark.png
+line ends: 0 of 464 ends on 250 lines float
+shot shots/lines-dark.png
+console: clean
+
+[status 0]
+== node C:/Users/k64163939/.kiro/skills/anatomy/scripts/capture.mjs mrl-elevator-light.html --out shots/desk-light.png --height 1500
+saved c:\Users\k64163939\Develop\mrl-elevator-anatomy\shots\desk-light.png
+clip 395,64 650x1380 · readout "L1 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm" · scrolls sideways: no
+console: clean
+
+[status 0]
+== node C:/Users/k64163939/.kiro/skills/anatomy/scripts/drive.mjs mrl-elevator-light.html --actions .agents/drive/call.json --height 1500
+eval: "hall L1 up button present"
+eval: "hall L4 up lit: true | L1 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm"
+eval: "L1 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm | Hall stations · Up and down call buttons on each landing jamb: L1 has only up, L5 only down."
+shot shots/call-l4-running.png · readout "L1 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm"
+eval: "Traction machine · A gearless permanent-magnet motor with 20 poles on a bedplate across the rail tops: at 1.00 m/s it turns at 119 rpm, fed at 19.9 Hz. | on: 26"
+shot shots/hover-machine.png · readout "L1 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm"
+console: clean
+
+[status 0]
+== node C:/Users/k64163939/.kiro/skills/anatomy/scripts/capture.mjs mrl-elevator-light.html --out shots/phone-light.png --width 390 --height 1200
+saved c:\Users\k64163939\Develop\mrl-elevator-anatomy\shots\phone-light.png
+clip 16,64 358x878 · readout "L1 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm" · scrolls sideways: no
+console: clean
+
+[status 0]
+== node C:/Users/k64163939/.kiro/skills/anatomy/scripts/capture.mjs mrl-elevator-light.html --out shots/still.png --height 1500 --reduced --key 4
+saved c:\Users\k64163939\Develop\mrl-elevator-anatomy\shots\still.png
+clip 395,64 650x1380 · readout "L4 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm" · scrolls sideways: no
+console: clean
+
+[status 0]
+== node C:/Users/k64163939/.kiro/skills/anatomy/scripts/drive.mjs mrl-elevator-light.html --actions .agents/drive/poses.json --height 1500
+line ends: 0 of 464 ends on 250 lines float
+shot shots/lines-l3-open.png
+shot shots/pose-l3-open.png · readout "L3 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm"
+line ends: 0 of 464 ends on 250 lines float
+shot shots/lines-l5.png
+shot shots/pose-l5.png · readout "L5 ▼ 0.00 m/s · rope 0.00 m/s · 0 rpm"
+console: clean
+
+[status 0]
+ALL DONE

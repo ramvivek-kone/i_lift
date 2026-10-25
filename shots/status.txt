@@ -1,0 +1,34 @@
+== audit.log 10/16/2026 14:52:32
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 0 tubes · 205 solids · 187 items · 57 depth states · 40615 overlaps · 1039 order rules · 34.7 s
+audit passed
+== build-dark.log 10/16/2026 14:51:52
+wrote mrl-elevator.html 341 KB · 187 items · 205 solids · scale 0.597
+== build.log 10/16/2026 14:47:40
+wrote mrl-elevator-light.html 342 KB · 187 items · 205 solids · scale 0.609
+== cap.log 10/16/2026 14:52:46
+saved C:\Users\k64163939\Develop\mrl-elevator-anatomy\shots\desk-light.png
+clip 395,64 650x1380 · readout "L1 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm" · scrolls sideways: no
+console: clean
+== lines.log 10/16/2026 14:52:42
+console: clean
+line ends: 0 of 60 ends on 124 lines float
+shot shots\lines-dark.png
+console: clean
+== run.log 10/16/2026 14:49:24
+saved C:\Users\k64163939\Develop\mrl-elevator-anatomy\shots\run.png
+clip 395,64 650x1380 · readout "L4 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm" · scrolls sideways: no
+readout over time: +2000ms "L2 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm" · +8000ms "L4 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm"
+console: clean
+== run2.log 10/16/2026 14:49:24
+saved C:\Users\k64163939\Develop\mrl-elevator-anatomy\shots\run.png
+clip 395,64 650x1380 · readout "L4 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm" · scrolls sideways: no
+readout over time: +2000ms "L2 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm" · +8000ms "L4 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm"
+console: clean
+== run3.log 10/16/2026 14:52:47
+== test.log 10/16/2026 14:51:46
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 283.057

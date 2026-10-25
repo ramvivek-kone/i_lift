@@ -1,0 +1,12 @@
+[
+  ["build.mjs", "--light", "--audit"],
+  ["build.mjs", "--light", "--audit", "--open"],
+  ["build.mjs", "--light"],
+  ["C:/Users/k64163939/.kiro/skills/anatomy/scripts/lines.mjs", "mrl-elevator-light.html", "--out", "shots/lines-light.png"],
+  ["C:/Users/k64163939/.kiro/skills/anatomy/scripts/lines.mjs", "mrl-elevator.html", "--out", "shots/lines-dark.png"],
+  ["C:/Users/k64163939/.kiro/skills/anatomy/scripts/capture.mjs", "mrl-elevator-light.html", "--out", "shots/desk-light.png", "--height", "1500"],
+  ["C:/Users/k64163939/.kiro/skills/anatomy/scripts/drive.mjs", "mrl-elevator-light.html", "--actions", ".agents/drive/call.json", "--height", "1500"],
+  ["C:/Users/k64163939/.kiro/skills/anatomy/scripts/capture.mjs", "mrl-elevator-light.html", "--out", "shots/phone-light.png", "--width", "390", "--height", "1200"],
+  ["C:/Users/k64163939/.kiro/skills/anatomy/scripts/capture.mjs", "mrl-elevator-light.html", "--out", "shots/still.png", "--height", "1500", "--reduced", "--key", "4"],
+  ["C:/Users/k64163939/.kiro/skills/anatomy/scripts/drive.mjs", "mrl-elevator-light.html", "--actions", ".agents/drive/poses.json", "--height", "1500"]
+]

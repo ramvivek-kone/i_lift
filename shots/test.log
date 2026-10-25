@@ -1,0 +1,15 @@
+✔ 1. every plan ends exactly on its target, at rest (2.4549ms)
+✔ 2. speed, acceleration and jerk stay within limits, position and speed are continuous (106.0656ms)
+✔ 2b. short runs solve a lower peak speed and still end on target (0.264ms)
+✔ 3. run times: one floor 5.067 s, L1 to L5 13.47 s (0.1199ms)
+✔ 4. derived numbers: equal and opposite travel, 2:1 rope speed, rated rpm and Hz (1.2654ms)
+✔ 5. controller: doors shut while moving, every call served, stops only on landings, deterministic (43.8239ms)
+✔ 5b. boarding only with the doors open, clamped to 0..8; the tour boards while open (3.0981ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 283.057

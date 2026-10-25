@@ -1,0 +1,61 @@
+﻿export function crowding(routes, P, { gap = 1, bend = 30, links = new Map(), items = null, allow = [], state, clear = 2, rods = [] } = {}) {
+  const cam = cameraBasis(P);
+  const shift = (thing) => (state === undefined ? [0, 0, 0] : offsetOf(thing, state));
+  const entries = items ? entriesOf(items.map((item) => ({ ...item, shapes: (item.shapes ?? []).map((shape) => moved(shape, shift(item))) })), cam) : null;
+  const bundles = new Map(routes.map((route) => [route.name, route.bundle]));
+  const shown = (owner, x, y, rod) => {
+    if (!entries) return true;
+    const entry = frontEntry(entries, cam, x, y);
+    if (rod) return Boolean(entry) && (entry.shape.name === rod.solid || (!entry.shape.name && entry.item === rod.solid));
+    return belongs(entry, owner, bundles.get(owner));
+  };
+  const flat = (p) => [cam.origin[0] + dot3(p, cam.R) * cam.k, cam.origin[1] + dot3(p, cam.D) * cam.k];
+  const lines = [...routes, ...rods].map((route) => {
+    const step = Math.max(0.25, route.r * 0.5);
+    const offset = shift(route);
+    const dense = resample(route.points.map((p) => add3(p, offset)), step);
+    return { ...route, step, dense, screen: dense.map(flat), width: route.r * cam.k };
+  });
+  const marksOf = (line) => {
+    const out = [];
+    const reach = Math.max(2, Math.round((2 * line.r) / line.step));
+    const last = line.dense.length - 1;
+    for (let i = 0; i <= last; i++) {
+      if (i <= reach || i >= last - reach) {
+        out.push({ i, where: i <= reach ? "start" : "end" });
+        continue;
+      }
+      const A = sub3(line.dense[i], line.dense[i - reach]);
+      const B = sub3(line.dense[i + reach], line.dense[i]);
+      const turn = (Math.acos(Math.max(-1, Math.min(1, dot3(A, B) / (len3(A) * len3(B) || 1)))) * 180) / Math.PI;
+      if (turn > bend) out.push({ i, where: "bend" });
+    }
+    return out;
+  };
+  const found = new Map();
+  for (const a of lines) {
+    if (a.rod) continue;
+    const marks = marksOf(a);
+    for (const b of lines) {
+      if (a === b || (a.bundle && a.bundle === b.bundle) || links.get(a.name)?.has(b.name)) continue;
+      if (b.rod && [...b.owners].some((name) => name === a.name || links.get(a.name)?.has(name))) continue;
+      if (allow.some(([x, y]) => [b.name, b.solid].filter(Boolean).some((name) => (matches([x], a.name) && matches([y], name)) || (matches([y], a.name) && matches([x], name))))) continue;
+      for (const { i, where } of marks) {
+        const [x, y] = a.screen[i];
+        let best = { d: BIG, j: -1 };
+        for (let j = 0; j < b.screen.length; j++) {
+          const d = Math.hypot(b.screen[j][0] - x, b.screen[j][1] - y);
+          if (d < best.d) best = { d, j };
+        }
+        const touch = best.d - a.width - b.width;
+        if (touch >= gap) continue;
+        if (where !== "bend" && touch <= -2 * Math.min(a.width, b.width)) {
+          const tip = a.screen[where === "start" ? 0 : a.screen.length - 1];
+          let clearTip = BIG;
+          for (const q of b.screen) clearTip = Math.min(clearTip, Math.hypot(q[0] - tip[0], q[1] - tip[1]));
+          const reachB = Math.max(2, Math.round((2 * b.r) / b.step));
+          const j0 = Math.max(0, best.j - reachB);
+          const j1 = Math.min(b.dense.length - 1, best.j + reachB);
+          const straight = j1 - j0 >= 2 && dot3(unit3(sub3(b.dense[best.j], b.dense[j0])), unit3(sub3(b.dense[j1], b.dense[best.j]))) > Math.cos((bend * Math.PI) / 180);
+          if (straight && clearTip > b.width + a.width + 1) continue;
+        }

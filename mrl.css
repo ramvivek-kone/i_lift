@@ -1,0 +1,197 @@
+/* MRL traction elevator figure. Every colour is a token with a light value and a dark override. */
+.mrl {
+  --mrl-cut: #e2e0da;
+  --mrl-cut-edge: var(--anatomy-lo);
+  --mrl-info: var(--anatomy-text);
+  --mrl-info-strong: var(--anatomy-strong);
+}
+.iso[data-theme="dark"] .mrl {
+  --mrl-cut: #1d1c1a;
+  --mrl-cut-edge: var(--anatomy-lo);
+}
+
+/* Light theme: the figure is drawn at about 0.6 px per cm, so the kit's paper tones (3 % apart) and pale
+   lines wash out over a 16 m hoistway. Keep the four-tone order and the hue, but spread the shades to about
+   4.5 % apart and darken the structure lines one step, so edges and facings read at 1x. Dark is unchanged. */
+.iso[data-theme="light"] .mrl {
+  --anatomy-shade-0: #cfcfcb;
+  --anatomy-shade-1: #dadad6;
+  --anatomy-shade-2: #e5e5e1;
+  --anatomy-shade-3: #efefeb;
+  --anatomy-lit-shade: #e6e6e2;
+  --anatomy-mid: #6c6c71;
+  --anatomy-lo: #98989d;
+  --anatomy-faint: #c4c4c7;
+  --anatomy-dot: #2e2e32;
+  --mrl-cut: #d6d3cb;
+}
+
+/* Concrete in section: the cut faces of the walls, slabs and pit. */
+.mrl .mrl-cut {
+  fill: var(--mrl-cut);
+  stroke: var(--mrl-cut-edge);
+  stroke-width: 0.6;
+  stroke-linejoin: round;
+}
+
+.mrl-stage {
+  position: relative;
+  border-radius: 10px;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.mrl-stage:focus-visible {
+  outline: 1px solid var(--anatomy-muted);
+  outline-offset: 6px;
+}
+
+/* The part / status line under the drawing, inside the card. */
+.mrl-info {
+  margin: 4px 20px 30px;
+  min-height: 3.2em;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--mrl-info);
+  font-variant-numeric: tabular-nums;
+}
+.mrl-info strong {
+  color: var(--mrl-info-strong);
+  font-weight: 500;
+}
+
+/* Selection tones: the picked group steps up, the rest step down. */
+.mrl-stage[data-focus] .it:not([data-on]) {
+  --anatomy-hi: var(--anatomy-mid);
+  --anatomy-mid: var(--anatomy-lo);
+}
+.it[data-on] {
+  --anatomy-hi: var(--anatomy-lit);
+  --anatomy-mid: var(--anatomy-hi);
+}
+.it[data-on] .iso-top,
+.it[data-on] .tb-shine {
+  fill: var(--anatomy-lit-top);
+}
+.it[data-on] .iso-shade,
+.it[data-on] .tb-body {
+  fill: var(--anatomy-lit-shade);
+}
+.it[data-on] [data-seamless] > .iso-shade {
+  stroke: var(--anatomy-lit-shade);
+}
+.it[data-on] [data-seamless] > .iso-top {
+  stroke: var(--anatomy-lit-top);
+}
+
+/* Things on faces: display windows and their digits, buttons, heatsink slots. */
+.mrl {
+  --mrl-window: #2b2a27;
+  --mrl-window-edge: var(--anatomy-mid);
+  --mrl-digit: #f3f1ea;
+  --mrl-btn: var(--anatomy-paper);
+  --mrl-btn-edge: var(--anatomy-mid);
+  --mrl-btn-lit: var(--anatomy-lit);
+}
+.iso[data-theme="dark"] .mrl {
+  --mrl-window: #0d0d0c;
+  --mrl-digit: #e9e6dc;
+}
+.mrl .mrl-window {
+  fill: var(--mrl-window);
+  stroke: var(--mrl-window-edge);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+.mrl .mrl-display {
+  fill: var(--mrl-digit);
+  font-family: var(--anatomy-mono);
+  font-variant-numeric: tabular-nums;
+}
+.mrl .mrl-btn {
+  fill: var(--mrl-btn);
+  stroke: var(--mrl-btn-edge);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+.mrl [data-lit] > .mrl-btn {
+  stroke: var(--mrl-btn-lit);
+}
+.mrl .mrl-btn-text {
+  fill: var(--anatomy-mid);
+  font-family: var(--anatomy-mono);
+}
+.mrl .mrl-arrow {
+  fill: var(--anatomy-mid);
+  stroke: none;
+}
+.mrl .mrl-slot {
+  fill: none;
+  stroke: var(--anatomy-lo);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+.mrl [data-call],
+.mrl [data-car-call] {
+  cursor: pointer;
+}
+
+/* Numbered parts buttons under the card. */
+.mrl {
+  --mrl-part-ring: #00000014;
+  --mrl-part-hover: #0000000a;
+}
+.iso[data-theme="dark"] .mrl {
+  --mrl-part-ring: #ffffff10;
+  --mrl-part-hover: #ffffff0a;
+}
+.mrl-parts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.mrl-part {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--anatomy-muted);
+  font: 12.5px/1.3 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px var(--mrl-part-ring);
+  transition: color 160ms var(--anatomy-ease), background 160ms var(--anatomy-ease);
+}
+.mrl-part:hover,
+.mrl-part:focus-visible,
+.mrl-part[data-on] {
+  color: var(--anatomy-strong);
+  background: var(--mrl-part-hover);
+  outline: none;
+}
+.mrl-part:focus-visible {
+  box-shadow: inset 0 0 0 1px var(--anatomy-muted);
+}
+.mrl-num {
+  font-family: var(--anatomy-mono);
+  font-size: 10px;
+  color: var(--anatomy-muted);
+}
+@media (prefers-reduced-motion: reduce) {
+  .mrl-part {
+    transition: none;
+  }
+}
+
+.mrl-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

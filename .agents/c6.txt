@@ -1,0 +1,3 @@
+saved c:\Users\k64163939\Develop\mrl-elevator-anatomy\shots\desk-dark.png
+clip 395,64 650x1380 · readout "L1 ▲ 0.00 m/s · rope 0.00 m/s · 0 rpm" · scrolls sideways: no
+console: clean

@@ -1,0 +1,13 @@
+[
+  ["wait", 300],
+  ["click", "[data-call=\"4\"][data-dir=\"up\"]"],
+  ["wait", 1500],
+  ["eval", "document.querySelector('[data-readout]').textContent + ' | lit ' + document.querySelector('[data-call=\"4\"][data-dir=\"up\"]').hasAttribute('data-lit')"],
+  ["wait", 3000],
+  ["eval", "document.querySelector('[data-readout]').textContent"],
+  ["move", ".mrl-info", 0.5, 0.5],
+  ["wait", 3000],
+  ["eval", "document.querySelector('[data-readout]').textContent + ' | ' + document.querySelector('[data-info]').textContent"],
+  ["wait", 6000],
+  ["eval", "document.querySelector('[data-readout]').textContent + ' | ' + document.querySelector('[data-info]').textContent"]
+]

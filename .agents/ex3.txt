@@ -1,0 +1,5 @@
+﻿build.mjs:464: put("meter.face", [METER.x0, 113, 16], `<g transform="${m}"><rect class="ac-window" x="0" y="0" width="6.8" height="4.8" rx="0.4"/><text class="ac-digits" data-part="meter" x="0.35" y="3.55" font-size="3" textLength="6.1" lengthAdjust="spacingAndGlyphs">004127</text></g>`, [record(A.box([METER.x0 - 0.05, 109.6, 13.6], [METER.x0, 116.4, 18.4], { name: "meter.face" }))], { bias: 0.3 });
+build.mjs:627: `<clipPath id="ac-open"><path d="${openClip}"/></clipPath>`,
+build.mjs:628: `<clipPath id="ac-face"><path d="${faceClip}"/></clipPath>`,
+build.mjs:347: back.push(k.faceTextSvg(k.topMatrix([LABEL.x + 7.4, LABEL.y + LABEL.d - 5], 1, P, "y"), "RAPTOR 2", { size: 4.2, tone: "lo" }));
+build.mjs:156: out.push(k.faceTextSvg(k.topMatrix([x, y + 9], DIAL_TOP, P, "x"), "0.01", { size: 2.4, tone: "lo", anchor: "middle" }));

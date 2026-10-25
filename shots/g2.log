@@ -1,0 +1,9 @@
+examples\arcade-cabinet\build.mjs:562: disc("service.knob", KF, 0, 2.6, 2.2, { tone: "hi" }, { extra: Faded(G.ribsOf(KF, 0, 2.6, 2.2, 24, P, { fade: [0.1, 0.55], seams: true }), { tone: "lo" }) + Ln(path3([[SV.x - 4.25, 44, 111], [SV.x - 4.25, 45.6, 112.2]]),
+examples\raptor-engine\build.mjs:369: const DELUGE = G.arcPoints(DECKF, 6.4, 68, 0, Math.PI * 2, 72);
+examples\raptor-engine\build.mjs:441: const MANIFOLD = G.arcPoints(ENGINE, MANIFOLD_S, MANIFOLD_R, PORTS[0] * DEG, (PORTS[0] + 360) * DEG, 120);
+examples\raptor-engine\build.mjs:554: const FTP_NECK = band("ftp", FTP, 216, 226, 11.6, {}, { extra: Faded(G.ribsOf(FTP, 216, 226, 11.6, 18, P, { fade: [0.1, 0.55] }), { tone: "faint" }) });
+examples\raptor-engine\build.mjs:841: put("stand", G.pointOf(MF, 22, 0, 0), S(G.disc(15, 29, 4.2, MF, P), { tone: "mid" }) + Faded(G.ribsOf(MF, 15, 29, 4.2, 14, P, { fade: [0.1, 0.55] }), { tone: "lo" }), { bias: -0.5, name: `${id}.motor`, shapes: [record(A.
+examples\ripple-tank\build.mjs:129: Ln(G.ribsOf(F, length * 0.4 + 0.3, length - 0.3, r, ribs, P), { tone: "lo" })
+examples\ripple-tank\build.mjs:235: mid.push(S(G.disc(0, 2.8, 1.4, F, P), { tone: "mid" }) + S(G.disc(2.8, 7, 3, F, P), { tone: "mid" }) + Ln(G.ribsOf(F, 3.1, 6.7, 3, 16, P), { tone: "lo" }));
+examples\ripple-tank\build.mjs:251: k.fadedSvg(G.ribsOf(UP([0, 0, 0]), LAMP[2] + 5.6, LAMP[2] + 10.6, 13.4, 36, P, { fade: [0.12, 0.5] }), { tone: "lo" }) +
+examples\ripple-tank\build.mjs:446: k.fadedSvg(G.ribsOf(MF, 3, motorLength - 4, 6, 28, P, { fade: [0.08, 0.45] }), { tone: "lo" }) +

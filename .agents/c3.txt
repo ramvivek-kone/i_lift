@@ -1,0 +1,4 @@
+saved c:\Users\k64163939\Develop\mrl-elevator-anatomy\shots\l5.png
+clip 395,64 650x1380 · readout "L2 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm" · scrolls sideways: no
+readout over time: +4000ms "L1 ▲ 0.96 m/s · rope 1.93 m/s · 115 rpm" · +8000ms "L2 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm" · +16000ms "L2 ▲ 1.00 m/s · rope 2.00 m/s · 119 rpm"
+console: clean
